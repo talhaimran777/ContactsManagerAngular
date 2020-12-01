@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   currentStyles: any;
+  currentClasses: any;
   makeTitleRed = true;
 
   constructor() {
     this.currentStyles = {
       color: this.makeTitleRed === true ? 'red' : 'green',
+    };
+
+    this.currentClasses = {
+      'bg-danger': this.makeTitleRed,
     };
   }
 }
