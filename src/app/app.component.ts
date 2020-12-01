@@ -16,7 +16,8 @@ export class AppComponent {
     };
 
     this.currentClasses = {
-      'bg-danger': this.makeTitleRed,
+      'text-danger': this.makeTitleRed,
+      'bg-primary': this.makeTitleRed,
     };
   }
 }
